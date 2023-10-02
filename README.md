@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Price Analyst & Comparison Tool - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Price Analyst & Comparison Tool! This application allows you to analyze and compare prices from various sources, including Bynogame.com and the Steam market.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+- [Technologies Used](#technologies-used)
+- [Deployment](#deployment)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This tool provides price analysis and comparison features for products available on Bynogame.com and the Steam market. It includes a backend system for data processing and storage, as well as a frontend interface for users to interact with the analyzed data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The backend GitHub repository can be found [here](https://github.com/oguzhantasimaz/bynogame-price-analyst).
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js**: Frontend framework for building the user interface.
+- **HTML/CSS**: Used for structuring and styling the web pages.
+- **Fetch API**: Used for making HTTP requests to the backend API.
 
-### `npm run build`
+## Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: The frontend is deployed on Vercel and can be accessed at [https://bynogamepriceanalyst.vercel.app/](https://bynogamepriceanalyst.vercel.app/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Backend**:
+    - Core API running on  [Fly.io](https://fly.io/).
+    - Producer and Consumer components are also hosted on [Fly.io](https://fly.io/).
+    - Kafka is hosted serverlessly on [Upstash](https://upstash.com/).
+    - MongoDB is hosted on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+- **Price Comparison**: Compare prices from different sources, such as Bynogame.com and the Steam market.
+- **Price Analysis**: Get insights into price trends and historical data.
+- **User-Friendly Interface**: A clean and intuitive design for an enjoyable user experience.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Feel free to open issues or submit pull requests to this GitHub repository.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project is licensed under the [MIT License](LICENSE).
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
