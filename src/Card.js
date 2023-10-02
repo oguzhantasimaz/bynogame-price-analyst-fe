@@ -42,7 +42,7 @@ function Card({ cardData }) {
       <p>Float: {cardData.float || "Unavailable"}</p>
       <p>ByNoGame Price: {cardData.price} TL</p>
       <p>Steam Lowest Price: {cardData.steamStats.lowest_price}</p>
-      <p>Price Difference: {calculatePriceDifference()}%</p>
+      <p>Price Difference: <b>{calculatePriceDifference()}%</b></p>
       <p>Steam Volume: {cardData.steamStats.volume}</p>
       <p>Steam Median Price: {cardData.steamStats.median_price}</p>
       <p>Seller Name: {cardData.sellerMarketName}</p>
