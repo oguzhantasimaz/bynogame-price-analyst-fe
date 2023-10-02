@@ -40,9 +40,11 @@ function Card({ cardData }) {
       <h2>{cardData.typeInfoSteam.hash}</h2>
       <p>Description: {cardData.description}</p>
       <p>Float: {cardData.float || "Unavailable"}</p>
-      <p>Price: {cardData.price} TL</p>
-      <p>Lowest Price: {cardData.steamStats.lowest_price}</p>
+      <p>ByNoGame Price: {cardData.price} TL</p>
+      <p>Steam Lowest Price: {cardData.steamStats.lowest_price}</p>
       <p>Price Difference: {calculatePriceDifference()}%</p>
+      <p>Steam Volume: {cardData.steamStats.volume}</p>
+      <p>Steam Median Price: {cardData.steamStats.median_price}</p>
       <p>Seller Name: {cardData.sellerMarketName}</p>
       <a href={"https://www.bynogame.com/en/games/csgo/skin/" + cardData.nameSlug} target="_blank" rel="noopener noreferrer">Buy Now</a>
       {/* Add more card information as needed */}

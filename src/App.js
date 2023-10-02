@@ -6,7 +6,7 @@ import CardList from './CardList';
 function App() {
   return (
     <div className="App">
-      <h1>Card List</h1>
+      <h1>Item List</h1>
       <CardList />
     </div>
   );
