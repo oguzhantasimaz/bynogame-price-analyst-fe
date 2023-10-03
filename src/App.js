@@ -8,7 +8,9 @@ function App() {
     <div className="App">
       <h1>Item List</h1>
       <CardList />
+      <p>Not affiliated with ByNoGame and Valve.</p>
     </div>
+
   );
 }
 
