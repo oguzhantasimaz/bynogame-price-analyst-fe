@@ -8,23 +8,11 @@ function Card({ cardData }) {
     setImageError(true);
   };
 
-  const queryEscape = (string) => {
-    var params = new URLSearchParams();
-    params.append('q', string);
-
-    let str = params.toString();
-    str = string.replace("q=", "")
-
-    return str
-  
-  }
-
-
   // Calculate the percentage difference between 'price' and 'steamStats.lowest_price'
   const calculatePriceDifference = () => {
     const originalPrice = cardData.price;
     const lowestPrice = parseFloat(
-      cardData.steamStats.lowest_price.replace('.', ',').replace(' TL', '')
+      cardData.steamStats.lowest_price.replace('.', '').replace(' TL', '')
     );
     const percentageDifference = ((lowestPrice - originalPrice) / originalPrice) * 100;
     return percentageDifference.toFixed(2);
@@ -53,15 +41,12 @@ function Card({ cardData }) {
       <p>Description: {cardData.description}</p>
       <p>Float: {cardData.float || "Unavailable"}</p>
       <p>ByNoGame Price: {cardData.price} TL</p>
-      <p>Steam Latest Price: {cardData.steamStats.lowest_price}</p>
+      <p>Steam Lowest Price: {cardData.steamStats.lowest_price}</p>
       <p>Price Difference: <b>{calculatePriceDifference()}%</b></p>
-      <p>Steam Daily Volume: {cardData.steamStats.volume}</p>
+      <p>Steam Volume: {cardData.steamStats.volume}</p>
       <p>Steam Median Price: {cardData.steamStats.median_price}</p>
       <p>Seller Name: {cardData.sellerMarketName}</p>
-      <a href={"https://www.bynogame.com/en/games/csgo/skin/" + cardData.nameSlug} target="_blank" rel="noopener noreferrer">Buy From ByNoGame</a>
-      <br />
-      <br />
-      <a href={"https://steamcommunity.com/market/listings/730/" + queryEscape(cardData.typeInfoSteam.hash)} target="_blank" rel="noopener noreferrer">Buy From Steam</a>
+      <a href={"https://www.bynogame.com/en/games/csgo/skin/" + cardData.nameSlug} target="_blank" rel="noopener noreferrer">Buy Now</a>
       {/* Add more card information as needed */}
     </div>
   );
